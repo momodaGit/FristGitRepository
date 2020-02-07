@@ -1,3 +1,5 @@
+
+
 from selenium import webdriver
 import time
 from openpyxl import load_workbook
@@ -5,10 +7,16 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 driver = webdriver.Chrome(r'd:\chromedriver.exe')
 
+#虎牙账号配置用之前需要填写‘’中内容
+Account = ''
+
+#虎牙密码配置用之前需要填写‘’中内容
+Password = ''
+
 #跳转路径配置
 URL = 'https://www.huya.com/?ptag=gouzai'#首页路径
-account = '18858520945'
-password = 'zjw199547'
+account = Account
+password = Password
 max_row_num = 100
 BUGdata = []
 room = '血色-BB文'    #//p[@class='name']  这条定位的文本信息
