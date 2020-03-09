@@ -1,2 +1,0 @@
-# FristGitRepository
-FristGitRepository：主要用来测试专用项目
