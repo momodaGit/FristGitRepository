@@ -38,9 +38,9 @@ def open():
 #单网页登录操作，输入账号/密码
 def login():
     time.sleep(1)
-    driver.find_element_by_xpath("//input[@name='account']").send_keys('zhangjiawei')
+    driver.find_element_by_xpath("//input[@name='account']").send_keys('')
     time.sleep(1)
-    driver.find_element_by_xpath("//input[@name='password']").send_keys('zhangjiawei')
+    driver.find_element_by_xpath("//input[@name='password']").send_keys('')
     time.sleep(1)
     driver.find_element_by_xpath("//button[@type='submit']").click()
     time.sleep(2)
