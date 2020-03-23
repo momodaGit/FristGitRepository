@@ -21,15 +21,15 @@ def open2(URL2):
 #多网页登录操作，输入账号/密码
 def login1():
     driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div[1]/figure/a").click()
-    driver.find_element_by_xpath("//input[@name='account']").send_keys('zhangjiawei')
-    driver.find_element_by_xpath("//input[@name='password']").send_keys('zhangjiawei')
+    driver.find_element_by_xpath("//input[@name='account']").send_keys('')
+    driver.find_element_by_xpath("//input[@name='password']").send_keys('')
 
 #单网页登录操作，输入账号/密码
 def login2():
     time.sleep(1)
-    driver.find_element_by_xpath("//input[@name='account']").send_keys('zhangjiawei')
+    driver.find_element_by_xpath("//input[@name='account']").send_keys('')
     time.sleep(1)
-    driver.find_element_by_xpath("//input[@name='password']").send_keys('zhangjiawei')
+    driver.find_element_by_xpath("//input[@name='password']").send_keys('')
     time.sleep(1)
     driver.find_element_by_xpath("//button[@type='submit']").click()
 
